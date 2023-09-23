@@ -38,6 +38,9 @@ public:
                st.push(ch);
            }
            else{
+            // if a closing bracket then we compare with the top of the stack 
+                // while comparing with top of stack we have 2 cases 
+                // the stack can be empty or the stack is not empty 
                if(!st.empty()){
                    char top = st.top();
                    if ((ch == ')' && top == '(') || 
